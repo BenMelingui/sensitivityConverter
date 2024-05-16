@@ -1,0 +1,3 @@
+Overwatch;0.0066
+Counter-Strike 2;0.022
+Valorant;0.07
