@@ -1,13 +1,11 @@
 package com.example.sensitivityconverter;
 import java.io.*;
 import java.util.HashMap;
-import java.util.Map;
 import java.util.Scanner;
-import java.util.Set;
 
-public class Games {
+public class SensitivityFile {
 
-    public Games(){
+    public SensitivityFile(){
         try {
             File myObj = new File("yaws.txt");
             if (myObj.createNewFile()) {
@@ -27,9 +25,7 @@ public class Games {
             myWriter.write("Counter-Strike 2;0.022\n");
             myWriter.write("Valorant;0.07");
             myWriter.close();
-            System.out.println("Successfully wrote to the file.");
         } catch (IOException e) {
-            System.out.println("An error occurred.");
             e.printStackTrace();
         }
 
@@ -44,10 +40,10 @@ public class Games {
                 gamesYaws.put(line[0],Double.parseDouble(line[1]));
             }
             fs.close();
-            System.out.println(gamesYaws);
+            //System.out.println(gamesYaws);
 
         }catch(FileNotFoundException e){
-            System.out.println("file not found");
+            //System.out.println("file not found");
         }
 
         return gamesYaws;
