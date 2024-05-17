@@ -1,2 +1,2 @@
 trying out javafx
-wanted an app to convert game sensibilites and mouse DPI to cm/360
+wanted an app to convert and calculate game sensibilites and mouse DPI to cm/360
