@@ -30,7 +30,7 @@ public class JavaFX extends Application {
 
     @Override
     public void start(Stage stage) {
-        new SensitivityFile(); // Ensure the file is created and populated
+        new SensitivityFile();
 
         GridPane pane = new GridPane();
 
